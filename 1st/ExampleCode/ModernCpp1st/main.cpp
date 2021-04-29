@@ -5,7 +5,7 @@
 
 using namespace std;
 
-//for¹® example
+//for example
 void forsentense()
 {
 	double x = 2.0, xn = 1.0, exp_x = 1.0;
@@ -20,7 +20,7 @@ void forsentense()
 		cout << "e^x is " << exp_x << '\n';
 	}
 
-	//c++11 ±¸¹®
+	//c++11 style
 	int primes[] = { 2, 3, 5, 7, 11, 13, 17, 19 };
 
 	for (int i : primes)
