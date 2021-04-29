@@ -14,6 +14,10 @@ float divide(float a, float b)
 	return a / b;
 }
 
+void f(int x) {}
+void f(int y) {}	//Error - re definition!!
+long f(int x) {}	//Error - return type difference!!
+
 void test()
 {
 	int x = 5, y = 2;
