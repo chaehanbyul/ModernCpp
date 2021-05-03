@@ -15,8 +15,8 @@ float divide(float a, float b)
 }
 
 void f(int x) {}
-void f(int y) {}	//Error - re definition!!
-long f(int x) {}	//Error - return type difference!!
+//void f(int y) {}	//Error - re definition!!
+//long f(int x) {}	//Error - return type difference!!
 
 void test()
 {
@@ -25,5 +25,5 @@ void test()
 
 	divide(x, y);
 	divide(n, m);
-	divide(x, m);	//build Error!!
+	//divide(x, m);	//build Error!!
 }
