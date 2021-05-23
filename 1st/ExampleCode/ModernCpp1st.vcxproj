@@ -142,7 +142,7 @@
     <ClCompile Include="errorprocess.cpp" />
     <ClCompile Include="forloop.cpp" />
     <ClCompile Include="function.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="InputOutput.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
