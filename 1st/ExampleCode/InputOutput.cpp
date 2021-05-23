@@ -49,8 +49,8 @@ void set_format()
 	cout << "63 hex is " << hex << 63 << '\n';	//63 hex is 3f
 	cout << "63 decimal is " << dec << 63 << '\n';	//63 decimal is + 63
 
-	cout << "pi < 3 is " << (pi < 3) << '\n';
-	cout << "pi < 3 is " << boolalpha << (pi < 3) << '\n';
+	cout << "pi < 3 is " << (pi < 3) << '\n';	//pi < 3 is +0
+	cout << "pi < 3 is " << boolalpha << (pi < 3) << '\n';	//pi < 3 is false
 
 }
 
