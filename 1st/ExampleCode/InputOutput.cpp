@@ -54,6 +54,44 @@ void set_format()
 
 }
 
+//I/O Error Process
+void errorProcess()
+{
+	std::ifstream infile;
+	std::string filename("some_missing_file.xyz");
+
+	bool opend = false;
+
+	while (!opend)
+	{
+		infile.open(filename);
+
+		if (infile.good())	//파일을 정상적으로 읽었는지 확인
+			opend = true;
+		else
+		{
+			std::cout << "The file '" << filename << "'doesn't exist, give a new file name:";
+			std::cin >> filename;
+		}
+	}
+
+	int i = 0;
+	double d = 0.1;
+
+	infile >> i >> d;
+
+	if (infile.good())
+	{
+		std::cout << "i is " << i << ", d is " << d << '\n';
+	}
+	else
+	{
+		std::cout << "Could not correctly read the content.\n";
+	}
+
+	infile.close();
+}
+
 int main()
 {
 	//ostream 레퍼런스를 인수로 사용
@@ -69,6 +107,8 @@ int main()
 	myfile.close();
 
 	set_format();
+
+	errorProcess();
 
 	return 0;
 }
